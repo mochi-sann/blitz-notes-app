@@ -9,9 +9,9 @@ const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box>
+      <Box borderBottomWidth="2px">
         <Container maxW={ContainerMaxW}>
-          <Stack p="2" borderBottomWidth="2px" spacing="2" direction="row">
+          <Stack p="2" spacing="2" direction="row">
             <Heading>
               <Link href="/">Notes App</Link>
             </Heading>
