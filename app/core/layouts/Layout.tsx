@@ -1,11 +1,15 @@
 import { Head, BlitzLayout, Link } from "blitz"
 import { Container, Stack, Box, Heading } from "@chakra-ui/react"
-const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
+import React from "react"
+type LayoutProps = {
+  title: string
+  children: React.ReactChildren
+}
+const Layout: BlitzLayout<LayoutProps> = ({ title, children }: LayoutProps) => {
   const ContainerMaxW = "800px"
   return (
     <>
       <Head>
-        <title>{title || "blitz-notes-app"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -13,7 +17,7 @@ const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
         <Container maxW={ContainerMaxW}>
           <Stack p="2" spacing="2" direction="row">
             <Heading>
-              <Link href="/">Notes App</Link>
+              <Link href="/">{"ppeage" + title}</Link>
             </Heading>
           </Stack>
         </Container>
