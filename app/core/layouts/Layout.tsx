@@ -3,7 +3,7 @@ import { Container, Stack, Box, Heading } from "@chakra-ui/react"
 import React from "react"
 type LayoutProps = {
   title: string
-  children: React.ReactChildren
+  children: React.ReactNode
 }
 const Layout: BlitzLayout<LayoutProps> = ({ title, children }: LayoutProps) => {
   const ContainerMaxW = "800px"
