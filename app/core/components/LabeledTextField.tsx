@@ -1,7 +1,7 @@
 import { forwardRef, PropsWithoutRef, ComponentPropsWithoutRef } from "react"
 import { useFormContext } from "react-hook-form"
 
-import { Input } from "@chakra-ui/input"
+import { Input, InputProps } from "@chakra-ui/input"
 import { FormControl, FormLabel } from "@chakra-ui/form-control"
 
 export interface LabeledTextFieldProps extends ComponentPropsWithoutRef<typeof Input> {
@@ -41,4 +41,5 @@ export const LabeledTextField = forwardRef<HTMLInputElement, LabeledTextFieldPro
   }
 )
 
+LabeledTextField.displayName = "LabeledTextField"
 export default LabeledTextField
