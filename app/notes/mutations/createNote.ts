@@ -3,7 +3,8 @@ import db from "db"
 import { z } from "zod"
 
 const CreateNote = z.object({
-  name: z.string(),
+  title: z.string(),
+  body: z.string(),
 })
 
 export default resolver.pipe(resolver.zod(CreateNote), resolver.authorize(), async (input) => {
