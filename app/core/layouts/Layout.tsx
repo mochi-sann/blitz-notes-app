@@ -1,6 +1,8 @@
 import { Head, BlitzLayout, Link } from "blitz"
-import { Container, Stack, Text, Box, Heading, Flex } from "@chakra-ui/react"
-import React from "react"
+import { Container, Stack, Text, Box, Heading, Flex, Spacer } from "@chakra-ui/react"
+import React, { Suspense } from "react"
+import { useCurrentUser } from "../hooks/useCurrentUser"
+import User from "app/auth/components/UserInfo"
 type LayoutProps = {
   title: string
   children: React.ReactNode
@@ -19,6 +21,8 @@ const Layout: BlitzLayout<LayoutProps> = ({ title, children }: LayoutProps) => {
               <Heading>
                 <Link href="/">{"ppeage" + title}</Link>
               </Heading>
+              <Spacer />
+              <User />
             </Stack>
           </Container>
         </Box>

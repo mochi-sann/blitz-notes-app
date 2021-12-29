@@ -1,7 +1,7 @@
 import { forwardRef, PropsWithoutRef, ComponentPropsWithoutRef } from "react"
 import { useFormContext } from "react-hook-form"
 
-import { Input, InputProps } from "@chakra-ui/input"
+import { Input, InputProps, FormErrorMessage } from "@chakra-ui/react"
 import { FormControl, FormLabel } from "@chakra-ui/form-control"
 
 export interface LabeledTextFieldProps extends ComponentPropsWithoutRef<typeof Input> {
@@ -32,8 +32,8 @@ export const LabeledTextField = forwardRef<HTMLInputElement, LabeledTextFieldPro
           <Input disabled={isSubmitting} {...register(name)} {...props} />
         </FormLabel>
         {error && (
-          <div role="alert" style={{ color: "red" }}>
-            {error}
+          <div>
+            <FormErrorMessage>{error}</FormErrorMessage>
           </div>
         )}
       </FormControl>
