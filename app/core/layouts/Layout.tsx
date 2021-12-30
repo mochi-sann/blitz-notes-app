@@ -4,16 +4,17 @@ import React, { Suspense } from "react"
 import { useCurrentUser } from "../hooks/useCurrentUser"
 import User from "app/auth/components/UserInfo"
 type LayoutProps = {
-  title: string
+  title?: string
   children: React.ReactNode
 }
-const Layout: BlitzLayout<LayoutProps> = ({ title, children }: LayoutProps) => {
+const Layout: BlitzLayout<LayoutProps> = ({ title = "none", children }: LayoutProps) => {
   const ContainerMaxW = "800px"
   return (
     <Box h="100vh">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Flex h="100%" flexDirection="column">
         <Box borderBottomWidth="2px">
           <Container maxW={ContainerMaxW}>

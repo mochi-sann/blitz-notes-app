@@ -18,6 +18,9 @@ const UserInfo = () => {
         >
           Logout
         </button>
+        <Link href={Routes.EditoUserProfile()}>
+          <a>Profile</a>
+        </Link>
         <div>
           User id: <code>{currentUser.id}</code>
           <br />
