@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
-import { Text } from "@chakra-ui/react"
+import { Button, Text } from "@chakra-ui/react"
 import Layout from "app/core/layouts/Layout"
 import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 import logout from "app/auth/mutations/logout"
@@ -18,16 +18,19 @@ const UserInfo = () => {
   if (currentUser) {
     return (
       <>
-        <button
+        <Button
           className="button small"
           onClick={async () => {
             await logoutMutation()
           }}
         >
           Logout
-        </button>
+        </Button>
         <div>
           <Text as="pre">{JSON.stringify(currentUser)}</Text>
+          <Link href={Routes.NewNotePage()}>
+            <Button as="a">新しい メモ</Button>
+          </Link>
         </div>
       </>
     )

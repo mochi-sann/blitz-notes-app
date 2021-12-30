@@ -20,7 +20,7 @@ const Layout: BlitzLayout<LayoutProps> = ({ title = "none", children }: LayoutPr
           <Container maxW={ContainerMaxW}>
             <Stack p="2" spacing="2" direction="row">
               <Heading>
-                <Link href="/">{"ppeage" + title}</Link>
+                <Link href="/">{"Home" + title}</Link>
               </Heading>
               <Spacer />
               <User />
