@@ -24,7 +24,7 @@ export const NotesList = () => {
         {notes.map((note) => (
           <li key={note.id}>
             <Link href={Routes.ShowNotePage({ noteId: note.id })}>
-              <a>{note.name}</a>
+              <a>{note.title}</a>
             </Link>
           </li>
         ))}

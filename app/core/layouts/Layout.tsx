@@ -12,7 +12,7 @@ type LayoutProps = {
 const Layout: BlitzLayout<LayoutProps> = ({ title = "none", children }: LayoutProps) => {
   const ContainerMaxW = "800px"
   return (
-    <Box h="100vh">
+    <Box minHeight={"100vh"}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -22,7 +22,7 @@ const Layout: BlitzLayout<LayoutProps> = ({ title = "none", children }: LayoutPr
           <Container maxW={ContainerMaxW}>
             <Stack p="2" spacing="2" direction="row">
               <Heading>
-                <Link href="/">{"Home" + title}</Link>
+                <Link href="/">Notes App</Link>
               </Heading>
               <Spacer />
               <User />

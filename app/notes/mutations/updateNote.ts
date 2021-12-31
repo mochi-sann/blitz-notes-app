@@ -5,7 +5,8 @@ import db from "db"
 
 const UpdateNote = z.object({
   id: z.number(),
-  name: z.string(),
+  title: z.string(),
+  body: z.string(),
 })
 
 export default resolver.pipe(
