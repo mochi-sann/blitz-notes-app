@@ -1,6 +1,7 @@
 import { resolver } from "blitz"
-import db from "db"
 import { z } from "zod"
+
+import db from "db"
 
 const DeleteNote = z.object({
   id: z.number(),

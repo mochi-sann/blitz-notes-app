@@ -1,8 +1,10 @@
-import { Head, BlitzLayout, Link } from "blitz"
 import { Container, Stack, Text, Box, Heading, Flex, Spacer } from "@chakra-ui/react"
+import { Head, BlitzLayout, Link } from "blitz"
 import React, { Suspense } from "react"
-import { useCurrentUser } from "../hooks/useCurrentUser"
+
 import User from "app/auth/components/UserInfo"
+
+import { useCurrentUser } from "../hooks/useCurrentUser"
 type LayoutProps = {
   title?: string
   children: React.ReactNode

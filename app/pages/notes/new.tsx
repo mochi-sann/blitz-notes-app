@@ -1,7 +1,8 @@
 import { Link, useRouter, useMutation, BlitzPage, Routes } from "blitz"
+
 import Layout from "app/core/layouts/Layout"
-import createNote from "app/notes/mutations/createNote"
 import { NoteForm, FORM_ERROR } from "app/notes/components/NoteForm"
+import createNote from "app/notes/mutations/createNote"
 
 const NewNotePage: BlitzPage = () => {
   const router = useRouter()

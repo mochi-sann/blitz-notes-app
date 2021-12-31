@@ -1,7 +1,8 @@
-import { Suspense } from "react"
 import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
-import { useCurrentUser } from "app/core/hooks/useCurrentUser"
+import { Suspense } from "react"
+
 import logout from "app/auth/mutations/logout"
+import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 
 const UserInfo = () => {
   const currentUser = useCurrentUser()

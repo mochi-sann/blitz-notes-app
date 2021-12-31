@@ -1,5 +1,6 @@
-import { Suspense } from "react"
 import { Head, Link, usePaginatedQuery, useRouter, BlitzPage, Routes } from "blitz"
+import { Suspense } from "react"
+
 import Layout from "app/core/layouts/Layout"
 import getNotes from "app/notes/queries/getNotes"
 

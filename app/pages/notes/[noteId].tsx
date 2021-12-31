@@ -1,8 +1,9 @@
-import { Suspense } from "react"
 import { Head, Link, useRouter, useQuery, useParam, BlitzPage, useMutation, Routes } from "blitz"
+import { Suspense } from "react"
+
 import Layout from "app/core/layouts/Layout"
-import getNote from "app/notes/queries/getNote"
 import deleteNote from "app/notes/mutations/deleteNote"
+import getNote from "app/notes/queries/getNote"
 
 export const Note = () => {
   const router = useRouter()

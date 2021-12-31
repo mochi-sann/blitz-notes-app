@@ -1,4 +1,5 @@
 import { paginate, resolver } from "blitz"
+
 import db, { Prisma } from "db"
 
 interface GetNotesInput

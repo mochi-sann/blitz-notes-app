@@ -1,6 +1,7 @@
 import { resolver } from "blitz"
-import db from "db"
 import { z } from "zod"
+
+import db from "db"
 
 const CreateNote = z.object({
   title: z.string(),

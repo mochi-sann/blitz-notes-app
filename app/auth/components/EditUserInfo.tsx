@@ -1,6 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react"
-import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 import React, { Suspense } from "react"
+
+import { useCurrentUser } from "app/core/hooks/useCurrentUser"
 
 type EditUserInfoProps = {}
 const UserInfo = () => {

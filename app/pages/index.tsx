@@ -1,9 +1,11 @@
-import { Suspense } from "react"
-import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
 import { Button, Text } from "@chakra-ui/react"
-import Layout from "app/core/layouts/Layout"
-import { useCurrentUser } from "app/core/hooks/useCurrentUser"
+import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
+import { Suspense } from "react"
+
 import logout from "app/auth/mutations/logout"
+import { useCurrentUser } from "app/core/hooks/useCurrentUser"
+import Layout from "app/core/layouts/Layout"
+
 import logo from "public/logo.png"
 
 /*

@@ -1,8 +1,8 @@
+import { Button } from "@chakra-ui/react"
+import { zodResolver } from "@hookform/resolvers/zod"
 import { useState, ReactNode, PropsWithoutRef } from "react"
 import { FormProvider, useForm, UseFormProps } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { Button } from "@chakra-ui/react"
 export interface FormProps<S extends z.ZodType<any, any>>
   extends Omit<PropsWithoutRef<JSX.IntrinsicElements["form"]>, "onSubmit"> {
   /** All your form fields */

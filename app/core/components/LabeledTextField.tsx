@@ -1,8 +1,7 @@
+import { FormControl, FormLabel } from "@chakra-ui/form-control"
+import { Input, InputProps, FormErrorMessage } from "@chakra-ui/react"
 import { forwardRef, PropsWithoutRef, ComponentPropsWithoutRef } from "react"
 import { useFormContext } from "react-hook-form"
-
-import { Input, InputProps, FormErrorMessage } from "@chakra-ui/react"
-import { FormControl, FormLabel } from "@chakra-ui/form-control"
 
 export interface LabeledTextFieldProps extends ComponentPropsWithoutRef<typeof Input> {
   /** Field name. */

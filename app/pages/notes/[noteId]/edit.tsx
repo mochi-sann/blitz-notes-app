@@ -1,9 +1,10 @@
-import { Suspense } from "react"
 import { Head, Link, useRouter, useQuery, useMutation, useParam, BlitzPage, Routes } from "blitz"
+import { Suspense } from "react"
+
 import Layout from "app/core/layouts/Layout"
-import getNote from "app/notes/queries/getNote"
-import updateNote from "app/notes/mutations/updateNote"
 import { NoteForm, FORM_ERROR } from "app/notes/components/NoteForm"
+import updateNote from "app/notes/mutations/updateNote"
+import getNote from "app/notes/queries/getNote"
 
 export const EditNote = () => {
   const router = useRouter()

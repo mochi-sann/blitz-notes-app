@@ -1,6 +1,7 @@
 import { useRouter, BlitzPage } from "blitz"
-import Layout from "app/core/layouts/Layout"
+
 import { EditUserInfo } from "app/auth/components/EditUserInfo"
+import Layout from "app/core/layouts/Layout"
 
 const EditoUserProfile: BlitzPage = () => {
   return (
