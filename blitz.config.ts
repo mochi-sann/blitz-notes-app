@@ -1,5 +1,7 @@
 import { BlitzConfig, sessionMiddleware, simpleRolesIsAuthorized } from "blitz"
 
+const removeImports = require("next-remove-imports")()
+
 const config: BlitzConfig = {
   middleware: [
     sessionMiddleware({
@@ -16,4 +18,4 @@ const config: BlitzConfig = {
   },
   */
 }
-module.exports = config
+module.exports = removeImports(config)

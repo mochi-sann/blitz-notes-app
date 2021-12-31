@@ -10,7 +10,6 @@ import {
 } from "blitz"
 
 import LoginForm from "app/auth/components/LoginForm"
-import "easymde/dist/easymde.min.css"
 
 export default function App({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
